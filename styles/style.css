@@ -1,7 +1,32 @@
 h1{
-    color: brown;
     font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 96px;
+    font-weight: 300;
+}
+
+h3{
+    font-size: 24px;
 }
 p{
     font-family: 'Roboto Mono', monospace;
+}
+
+.header-container{
+    background: black;
+    color: white;
+    padding: 120px 100px;
+}
+
+
+@media(max-width: 768px){
+    h1{
+        font-size: 60px;
+    }
+    .header-container{
+        padding: 100px 80px;
+    }
+    .header-container h3{
+        margin-top: 10px;
+        font-size: 20px;
+    }
 }
