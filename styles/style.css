@@ -164,19 +164,20 @@ footer a:hover {
 }
 
 .button-row {
-  display: flex;
-  justify-content: space-evenly;
   flex-wrap: nowrap;
-  margin: 10px auto 20px;
+  margin: 10px 15px 20px;
+  justify-content: center;
 }
 
 .button-row a {
-  margin: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* MEDIA QUERIES */
 @media (max-width: 992px) {
-  h1 {
+  .hero-container h1 {
     font-size: 65px;
   }
 
@@ -216,7 +217,7 @@ footer a:hover {
     width: 80%;
   }
 
-  .pcontentcontainer h1 {
+  .content-container h1 {
     font-size: 36px;
   }
 
@@ -232,7 +233,19 @@ footer a:hover {
   }
 }
 
+.project-card p {
+  font-size: 12px;
+}
+
 @media (max-width: 576px) {
+  .hero-container h1 {
+    font-size: 50px;
+  }
+
+  .secondary-heading {
+    font-size: 15px;
+  }
+
   .content-container h1 {
     margin-top: 20px;
     font-size: 30px;
