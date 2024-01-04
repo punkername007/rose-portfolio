@@ -80,7 +80,7 @@ footer a:hover {
   padding: 100px 100px;
 }
 
-.main-content-heading {
+.secondary-heading {
   background-color: var(--secondary-color);
   font-family: var(--primary-font);
   font-size: 20px;
@@ -109,24 +109,58 @@ footer a:hover {
 
 .card:hover {
   transform: scale(1.1);
-  cursor: pointer;
 }
+
+.project-button {
+  background: #000;
+  box-shadow: 3px 5px 30px rgba(139, 166, 187, 0.158);
+}
+
+.project-button a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.project-button:hover {
+  color: #dcf2f1c8;
+}
+
+/* ABOUT PAGE */
+
+.personal-info-container {
+  background-color: var(--secondary-color);
+  box-shadow: 0px 5px 50px rgba(139, 166, 187, 0.158);
+  border-radius: 5px;
+  margin: 120px auto;
+  padding: 30px 20px;
+  width: 800px;
+}
+
+.personal-info-container h1 {
+  font-size: 60px;
+}
+
+.personal-info-container img {
+  border-radius: 5px;
+}
+
+/* MEDIA QUERIES */
 @media (max-width: 992px) {
   h1 {
     font-size: 65px;
   }
 
   .hero-container h3 {
-    margin-top: 10px;
     font-size: 20px;
+    margin-top: 10px;
   }
 
-  .main-content-heading {
+  .hero-container {
+    padding: 100px 50px;
+  }
+
+  .secondary-heading {
     font-size: 18px;
-  }
-
-  .latest-projects {
-    display: block;
   }
 
   .main-container {
@@ -136,11 +170,19 @@ footer a:hover {
     margin: 30px 0;
   }
 
+  .card:last-child {
+    margin-bottom: 0;
+  }
+
   .card:hover {
     transform: none;
   }
 
   footer i {
     font-size: 30px;
+  }
+
+  .personal-info-container h1 {
+    font-size: 40px;
   }
 }
