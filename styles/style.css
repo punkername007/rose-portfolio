@@ -65,6 +65,21 @@ p {
   text-align: center;
 }
 
+.project-credit {
+  font-size: 12px;
+  text-align: center;
+  font-family: var(--primary-font);
+  padding-bottom: 10px;
+  color: #c5cbd6bf;
+  margin: 10px;
+}
+
+.project-credit a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
 /* HOME PAGE */
 
 .main-container {
